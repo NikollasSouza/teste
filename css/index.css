@@ -1,0 +1,223 @@
+/* index.css */
+
+/* Reset básico para garantir que todos os navegadores comecem com a mesma base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2b2b2b;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;  /* Fonte personalizada (Poppins) */
+    font-size: 4rem;  /* Tamanho da fonte ajustado */
+    font-weight: 600;  /* Peso da fonte mais forte */
+    color: #0da119;  /* Cor do texto */
+    text-transform: uppercase;  /* Deixar todas as letras em maiúsculas */
+    letter-spacing: 3px;  /* Aumento no espaçamento entre as letras */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);  /* Sombra mais intensa */
+    margin: 0;  /* Remover margens */
+    padding: 0;  /* Remover espaçamento interno */
+    display: inline-block;  /* Garantir que o logo fique alinhado corretamente */
+    position: relative;  /* Permite adicionar um efeito mais avançado como animações */
+    transition: transform 0.3s ease-in-out;  /* Adicionando uma transição suave para animações */
+}
+
+header .logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* Seção de Introdução */
+.introducao {
+    background-color: #005222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.introducao h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.introducao p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.introducao button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.introducao button:hover {
+    background-color: #000000;
+}
+
+/* Seção de Moda Sustentável */
+.moda-sustentavel {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ecf0f1;
+}
+
+.moda-sustentavel h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.moda-sustentavel p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.moda-sustentavel img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Seção de Doações */
+.doacoes {
+    background-color: #005222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.doacoes h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.doacoes p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.doacoes button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.doacoes button:hover {
+    background-color: #000000;
+}
+
+/* Seção de Benefícios */
+.beneficios {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.beneficios h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.beneficio-item {
+    margin-bottom: 30px;
+}
+
+.beneficio-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.beneficio-item p {
+    font-size: 1.2em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Adicione isso ao final dos arquivos CSS */
+@media (max-width: 768px) {
+    /* Ajustes para telas menores que 768px (tablets e celulares) */
+
+    /* Exemplo para produtos.html */
+    .produtos-container {
+        grid-template-columns: 1fr; /* 1 coluna em vez de várias */
+    }
+
+    /* Exemplo para doacao.html */
+    .doacao-form {
+        padding: 15px; /* Reduz o padding em telas pequenas */
+    }
+
+    /* Exemplo para carrinho.html */
+    .produto-carrinho {
+        flex-direction: column; /* Empilha imagem e info verticalmente */
+    }
+
+    /* Ajuste geral para filtros (produtos.html) */
+    .filtro-container {
+        flex-direction: column; /* Empilha busca e seletor */
+    }
+
+    .filtro-search input,
+    .filtro-category select {
+        width: 100% !important; /* Ocupa toda a largura */
+        margin-bottom: 10px;
+    }
+}
+/* Estilo específico para a página de agradecimento */
+.introducao button {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
